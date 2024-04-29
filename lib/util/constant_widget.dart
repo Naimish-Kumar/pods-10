@@ -346,26 +346,23 @@ Widget defaultTextField(
     obscureText: isPass,
     controller: controller,
     style: TextStyle(
-        color: hintColor, fontSize: 16.sp, fontWeight: FontWeight.w400),
+        color: Colors.black, fontSize: 16.sp, fontWeight: FontWeight.w400),
     decoration: InputDecoration(
       hintText: hint,
       hintStyle: TextStyle(
-          color: hintColor, fontSize: 16.sp, fontWeight: FontWeight.w400),
-      border: UnderlineInputBorder(
-        borderSide: BorderSide(color: dividerColor, width: 1.h),
-      ),
-      enabledBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: dividerColor, width: 1.h),
-      ),
-      focusedBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: accentColor, width: 1.h),
-      ),
-      errorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: errorColor, width: 1.h),
-      ),
-      focusedErrorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: errorColor, width: 1.h),
-      ),
+          color: Colors.grey, fontSize: 16.sp, fontWeight: FontWeight.w400),
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+      enabledBorder:
+          OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+      // focusedBorder: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: accentColor, width: 1.h),
+      // ),
+      // errorBorder: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: errorColor, width: 1.h),
+      // ),
+      // focusedErrorBorder: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: errorColor, width: 1.h),
+      // ),
       errorStyle: TextStyle(
           color: errorColor, fontSize: 12.sp, fontWeight: FontWeight.w400),
       prefixIcon: getSvgImage(prefixImage, width: 24.h, height: 24.h)
@@ -448,21 +445,24 @@ Widget getCountryTextFiled(BuildContext context,
       hintText: hint,
       hintStyle: TextStyle(
           color: hintColor, fontSize: 16.sp, fontWeight: FontWeight.w400),
-      border: UnderlineInputBorder(
-        borderSide: BorderSide(color: dividerColor, width: 1.h),
-      ),
-      enabledBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: dividerColor, width: 1.h),
-      ),
-      focusedBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: accentColor, width: 1.h),
-      ),
-      errorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: errorColor, width: 1.h),
-      ),
-      focusedErrorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(color: errorColor, width: 1.h),
-      ),
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+      enabledBorder:
+          OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+      // border: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: dividerColor, width: 1.h),
+      // ),
+      // enabledBorder: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: dividerColor, width: 1.h),
+      // ),
+      // focusedBorder: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: accentColor, width: 1.h),
+      // ),
+      // errorBorder: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: errorColor, width: 1.h),
+      // ),
+      // focusedErrorBorder: UnderlineInputBorder(
+      //   borderSide: BorderSide(color: errorColor, width: 1.h),
+      // ),
       errorStyle: TextStyle(
           color: errorColor, fontSize: 12.sp, fontWeight: FontWeight.w400),
       prefixIcon: Row(
@@ -534,12 +534,14 @@ Widget getToolbarWithIcon(Function function) {
   return Stack(alignment: Alignment.topCenter, children: [
     getAssetImage("splash_logo.png", height: 88.h, width: 68.h),
     Align(
-        alignment: Alignment.topLeft,
-        child: GestureDetector(
-            onTap: () {
-              function();
-            },
-            child: getSvgImage("arrow_back.svg", width: 24.h, height: 24.h)))
+      alignment: Alignment.topLeft,
+      child: GestureDetector(
+        onTap: () {
+          function();
+        },
+        child: getSvgImage("arrow_back.svg", width: 24.h, height: 24.h),
+      ),
+    )
   ]);
 }
 

@@ -39,6 +39,7 @@ class _TabSignInState extends State<TabSignIn> {
       child: Column(
         children: [
           defaultTextField(
+          
               context, emailController, "Email Address", "email.svg",
               validator: (email) {
             if (email == null || email.isEmpty) {

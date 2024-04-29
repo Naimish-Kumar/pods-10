@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_share/flutter_share.dart';
-
 import 'package:get/get.dart';
 import 'package:music_podcast/controller/controller.dart';
 import 'package:music_podcast/util/color_category.dart';
 import 'package:music_podcast/util/constant_widget.dart';
-
 import '../routes/app_routes.dart';
 import '../util/constant.dart';
 
@@ -31,7 +29,7 @@ class _LibraryDialogState extends State<LibraryDialog> {
           padding: EdgeInsets.symmetric(horizontal: 20.h),
           decoration: BoxDecoration(
               color: lightBg,
-              borderRadius: BorderRadius.vertical(top: Radius.circular(22.h))),
+              borderRadius: BorderRadius.vertical(top: Radius.circular(22.h),),),
           child: Column(
             children: [
               getVerSpace(30.h),

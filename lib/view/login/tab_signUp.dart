@@ -22,10 +22,10 @@ class TabSignUp extends StatefulWidget {
 }
 
 class _TabSignUpState extends State<TabSignUp> {
-  TextEditingController nameController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
-  TextEditingController phoneController = TextEditingController();
+  final nameController = TextEditingController();
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final phoneController = TextEditingController();
   final signUpForm = GlobalKey<FormState>();
   LoginController controller = Get.put(LoginController());
 

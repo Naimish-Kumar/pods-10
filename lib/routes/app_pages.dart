@@ -18,7 +18,6 @@ import 'package:music_podcast/view/popular_podcast/popular_podcast_list.dart';
 import 'package:music_podcast/view/profile/my_profile.dart';
 import 'package:music_podcast/view/profile/privacy_screen.dart';
 import 'package:music_podcast/view/profile/term_condition_screen.dart';
-import 'package:music_podcast/view/search/search_screen.dart';
 import 'package:music_podcast/view/trending_podcast/trending_podcast_list.dart';
 
 import '../splash_screen.dart';

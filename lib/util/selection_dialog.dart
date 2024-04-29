@@ -136,13 +136,13 @@ class _SelectionDialogState extends State<SelectionDialog> {
                     width: 40.h,
                     margin: const EdgeInsets.only(right: 16.0),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4.h),
-                      image: DecorationImage(
-                        image: AssetImage(e.flagUri!,
-                          package: 'country_code_picker',),
-                        fit: BoxFit.fill
-                      )
-                    ),
+                        borderRadius: BorderRadius.circular(4.h),
+                        image: DecorationImage(
+                            image: AssetImage(
+                              e.flagUri!,
+                              package: 'country_code_picker',
+                            ),
+                            fit: BoxFit.fill)),
                     // clipBehavior: widget.flagDecoration == null
                     //     ? Clip.none
                     //     : Clip.hardEdge,
@@ -187,7 +187,6 @@ class _SelectionDialogState extends State<SelectionDialog> {
     filteredElements = widget.elements;
     super.initState();
   }
-
 
   void _selectItem(CountryCode e) {
     Get.back(result: e);

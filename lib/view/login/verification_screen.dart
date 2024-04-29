@@ -7,7 +7,6 @@ import 'package:pinput/pinput.dart';
 
 import '../../dialog/account_create_dialog.dart';
 import '../../util/color_category.dart';
-import '../../util/constant.dart';
 import '../../util/constant_widget.dart';
 
 class VerificationScreen extends StatefulWidget {

@@ -28,7 +28,6 @@ class _LoginScreenState extends State<LoginScreen>
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     tabController = TabController(length: 2, vsync: this);
     pController = PageController();
@@ -36,7 +35,6 @@ class _LoginScreenState extends State<LoginScreen>
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     tabController.dispose();
   }
