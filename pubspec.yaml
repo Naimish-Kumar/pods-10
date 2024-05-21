@@ -25,6 +25,7 @@ dependencies:
   audio_waveforms: ^0.1.4
   flutter_share: ^2.0.0
   fluttertoast: ^8.0.9
+  icons_launcher: ^2.1.7
 
   cupertino_icons: ^1.0.2
 
@@ -52,3 +53,10 @@ flutter:
           weight: 500
         - asset: fonts/PlusJakartaSans-Regular.ttf
           weight: 400
+icons_launcher:
+  image_path: "assets/images/logo.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
